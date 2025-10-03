@@ -16,6 +16,7 @@ on:
 
 permissions:
   contents: read
+  security-events: write
 
 jobs:
   semgrep:
@@ -42,4 +43,3 @@ jobs:
         with:
           sarif_file: semgrep.sarif
         if: always()
-        
