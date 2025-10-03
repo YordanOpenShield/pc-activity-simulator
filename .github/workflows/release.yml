@@ -31,6 +31,7 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r requirements.txt
           pip install pyinstaller
+        shell: bash
 
       - name: Build Windows executable with PyInstaller
         run: |
@@ -50,6 +51,7 @@ jobs:
             TAG="${{ github.ref_name }}"
           fi
           echo "tag=$TAG" >> $GITHUB_OUTPUT
+        shell: bash
 
       - name: Create GitHub Release
         id: create_release
