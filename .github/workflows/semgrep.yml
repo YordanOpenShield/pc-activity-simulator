@@ -1,5 +1,5 @@
 # Name of this GitHub Actions workflow.
-name: Semgrep CE scan
+name: Semgrep CE Scan
 
 on:
   # Scan in PRs:
