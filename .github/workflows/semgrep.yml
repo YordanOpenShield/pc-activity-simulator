@@ -16,7 +16,6 @@ on:
   # Schedule the CI job (this method uses cron syntax):
   schedule:
     - cron: '0 17 * * *'
-    # It is recommended to change the schedule to a random time.
 
 jobs:
   semgrep:
