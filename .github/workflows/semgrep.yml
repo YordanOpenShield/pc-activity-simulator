@@ -1,6 +1,10 @@
 # Name of this GitHub Actions workflow.
 name: Semgrep CE Scan
 
+permissions:
+  contents: read
+  security-events: write
+
 on:
   # Scan in PRs:
   pull_request: {}
@@ -13,10 +17,6 @@ on:
   schedule:
     - cron: '0 17 * * *'
     # It is recommended to change the schedule to a random time.
-
-permissions:
-  contents: read
-  security-events: write
 
 jobs:
   semgrep:
